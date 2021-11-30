@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Press Start 2P", sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -56,6 +56,12 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .number {
   background: #eee;
   color: #333;
@@ -67,6 +73,13 @@ h1 {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+}
+
+@media screen and (max-width: 900px) {
+  .number {
+    font-size: 3rem;
+    padding: 1rem 0rem;
+  }
 }
 
 .between {
@@ -105,6 +118,13 @@ h1 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 980px) {
+  .again {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+  }
+}
+
 .btn:hover {
   background-color: #ccc;
 }
@@ -114,6 +134,20 @@ h1 {
   height: 3rem;
 }
 
+@media screen and (max-width: 900px) {
+  .message {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 12px;
+    text-align: center;
+  }
 }
